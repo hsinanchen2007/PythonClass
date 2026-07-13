@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-python.debugpy",
+        "vadimcn.vscode-lldb",
+        "llvm-vs-code-extensions.vscode-clangd",
+        "ms-vscode.cpptools"
+    ]
+}

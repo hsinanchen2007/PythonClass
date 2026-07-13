@@ -1,0 +1,23 @@
+{
+    "folders": [
+        {
+            "name": "PythonClass",
+            "path": "."
+        }
+    ],
+    "settings": {
+        "files.exclude": {
+            "**/.git*": true
+        },
+        "search.exclude": {
+            "**/.git*": true
+        },
+        "files.watcherExclude": {
+            "**/.git*/**": true
+        },
+        "explorer.excludeGitIgnore": false,
+        "search.useIgnoreFiles": false,
+        "search.useGlobalIgnoreFiles": false,
+        "search.useParentIgnoreFiles": false
+    }
+}
