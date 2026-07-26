@@ -2,23 +2,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: debug active file",
-            "type": "debugpy",
-            "request": "launch",
-            "program": "${file}",
-            "cwd": "${fileDirname}",
-            "console": "integratedTerminal",
-            "justMyCode": true,
-            "presentation": {
-                "hidden": false,
-                "order": 1
-            }
-        },
-        {
             "name": "Linux/macOS: build and debug active file (CodeLLDB)",
             "type": "lldb",
             "request": "launch",
-            "program": "/tmp/${workspaceFolderBasename}-${fileBasenameNoExtension}-vscode-debug",
+            "program": "/tmp/vscode-cpp/${workspaceFolderBasename}/${relativeFileDirname}/${fileBasenameNoExtension}",
             "args": [],
             "cwd": "${fileDirname}",
             "terminal": "integrated",
@@ -45,7 +32,7 @@
             "name": "Windows: cl.exe build and debug",
             "type": "cppvsdbg",
             "request": "launch",
-            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "program": "${env:TEMP}\\vscode-cpp\\${workspaceFolderBasename}\\${relativeFileDirname}\\${fileBasenameNoExtension}.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
